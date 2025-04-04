@@ -56,7 +56,8 @@ const SuggestionResults = ({ suggestion }: SuggestionResultsProps) => {
               <div>
                 <h3 className="text-sm font-medium mb-2">Overall Virality Score</h3>
                 <div className="flex items-center gap-2">
-                  <Progress value={suggestion.metrics.overall} className="h-2" 
+                  <Progress 
+                    value={suggestion.metrics.overall} 
                     className={`h-2 ${
                       suggestion.metrics.overall > 80 
                         ? "bg-green-500" 
